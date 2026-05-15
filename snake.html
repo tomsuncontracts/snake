@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贪吃蛇</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <div class="container">
+    <h1>贪吃蛇</h1>
+
+    <div class="score-board">
+      <div class="score-item">
+        <span class="label">得分</span>
+        <span id="score">0</span>
+      </div>
+      <div class="score-item">
+        <span class="label">最高分</span>
+        <span id="best-score">0</span>
+      </div>
+      <div class="score-item">
+        <span class="label">等级</span>
+        <span id="level">1</span>
+      </div>
+    </div>
+
+    <div class="game-wrapper">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="overlay-content">
+          <h2 id="overlay-title">贪吃蛇</h2>
+          <p id="overlay-message">用方向键或 WASD 控制方向</p>
+          <button id="start-btn">开始游戏</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls-hint">
+      <span>↑ ↓ ← → 或 W A S D 控制方向</span>
+      <span>P 暂停 / 继续</span>
+    </div>
+
+    <div class="mobile-controls">
+      <div class="mobile-row">
+        <button class="mobile-btn" id="btn-up">▲</button>
+      </div>
+      <div class="mobile-row">
+        <button class="mobile-btn" id="btn-left">◀</button>
+        <button class="mobile-btn" id="btn-down">▼</button>
+        <button class="mobile-btn" id="btn-right">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
