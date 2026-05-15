@@ -303,4 +303,3 @@ canvas.addEventListener('touchend', e => {
 }, { passive: true });
 
 // Initial draw
-draw();
